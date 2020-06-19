@@ -1,0 +1,104 @@
+/*
+    This is my first (mobile first) project
+ */
+
+/* box model hack */
+
+* {
+    -moz-box-sizing: border-box; /* firefox */
+    -webkit-box-sizing: border-box; /* chrome - safari - ios - android */
+    box-sizing: border-box; /* IE */
+}
+html {
+    font-size: 100%;    /* the default browser font size */
+}
+
+#container {
+    width: 600px;
+    margin: 100px auto;
+}
+
+#hero {
+    line-height: 0;
+
+}
+
+#hero img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+#intro {
+    background: white;
+    padding: 20px 20px 60px 30px;
+    overflow: auto;
+}
+
+#contact {
+    background: pink;
+    padding: 20px 20px 80px 20px;
+    overflow: auto;
+}
+
+#map {
+    background: white;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    overflow: auto;
+}
+
+body {
+    font-family: sans-serif;
+    background: url("images/space-background.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1, h2 {
+    color: deeppink;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+aside.right {
+    float: right;
+    padding: 0 20px 0 40px;
+}
+
+aside.left {
+    float: left;
+    padding: 0 60px 0 20px ;
+
+}
+
+iframe {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    #container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #hero img {
+        border-radius: 0;
+    }
+
+    aside.right, aside.left {
+        float: none;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    #map {
+        border-radius: 0;
+    }
+}
+
